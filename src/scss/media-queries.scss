@@ -1,0 +1,93 @@
+.main-container {
+  display: flex;
+  height: auto;
+}
+
+.card-section {
+  width: 29.9rem;
+  height: 100vh;
+
+  &__front-card {
+    margin-top: 3.8rem;
+    margin-left: 21.6rem;
+    width: 27.7rem;
+
+    &-logo {
+      width: 5.2rem;
+      left: 2rem;
+      top: 1.8rem;
+    }
+
+    &-number {
+      top: 6.8rem;
+      left: 2rem;
+      letter-spacing: 0.11rem;
+      font-size: 1.9rem;
+    }
+
+    &-cardholder {
+      font-size: 1.1rem;
+      left: 1.85rem;
+      bottom: 0.6rem;
+    }
+
+    &-expire-date {
+      font-size: 1rem;
+      right: 2rem;
+      bottom: 0.72rem;
+    }
+  }
+
+  &__back-card {
+    width: 27.7rem;
+    margin-top: 26.9rem;
+    margin-left: 29.8rem;
+
+    &-cvc {
+      top: 6rem;
+      right: 3.65rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.form-section {
+  padding-left: 22.1rem;
+  padding-top: 16.94rem;
+  max-width: 23.55rem;
+
+  &__date-cvc-wrapper {
+    gap: 1.2rem;
+  }
+
+  &__date-inputs-wrapper {
+    gap: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+
+  &__card-exp-date-input {
+    width: 3rem;
+  }
+
+  &__card-month-year-input {
+    width: 2.986rem;
+  }
+
+  &__submit-btn {
+    margin-top: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__completed-container {
+    margin-left: 2rem;
+    padding-top: 2rem;
+    width: 30rem;
+  }
+}
+
+.attribution {
+  margin-top: -2rem;
+}

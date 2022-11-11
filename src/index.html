@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link rel="stylesheet" href="./scss/media-queries.scss" media="(min-width: 1000px)">
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="card-section">
+        <div class="card-section__front-card">
+          <div class="card-section__front-card-info-wrapper">
+            <img
+              class="card-section__front-card-image"
+              src="./assets/images/bg-card-front.png"
+              alt="front card illustration"
+            />
+            <img
+              class="card-section__front-card-logo"
+              src="./assets/images/card-logo.svg"
+            />
+            <p class="card-section__front-card-number">0000 0000 0000 0000</p>
+            <p class="card-section__front-card-cardholder">Jane Appleseed</p>
+            <p class="card-section__front-card-expire-date">
+              <span class="card-section__front-card-month">00</span>/<span
+                class="card-section__front-card-year"
+                >00</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="card-section__back-card">
+          <div class="card-section__back-card-info-wrapper">
+            <img
+              class="card-section__back-card-image"
+              src="./assets/images/bg-card-back.png"
+              alt="back card illustration"
+            />
+            <p class="card-section__back-card-cvc">000</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <form class="form-section__form">
+          <label class="form-section__cardholder-label" for="cardholder-name"
+            >Cardholder Name</label
+          >
+          <input
+            class="form-section__cardholder-input"
+            type="text"
+            id="cardholder-name"
+            placeholder="e.g. Jane Appleseed"
+            maxlength="20"
+          />
+          <small class="form-section__name-error"
+            >Please put a valid name</small
+          >
+
+          <label class="form-section__card-number-label" for="card-number"
+            >Card Number</label
+          >
+          <input
+            class="form-section__card-number-input"
+            id="card-number"
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            maxlength="19"
+          />
+          <small class="form-section__card-number-error"
+            >Wrong format, numbers only</small
+          >
+
+          <div class="form-section__date-cvc-wrapper">
+            <div class="form-section__card-date-wrapper">
+              <div class="form-section__date-labels-wrapper">
+                <label class="form-section__card-exp-date-label" for="exp-date"
+                  >EXP. DATE</label
+                >
+                <label class="form-section__card-month-year-label" for="mm-yy"
+                  >(MM/YY)</label
+                >
+              </div>
+              <div class="form-section__date-inputs-wrapper">
+                <input
+                  class="form-section__card-exp-date-input"
+                  id="exp-date"
+                  type="text"
+                  placeholder="MM"
+                  maxlength="2"
+                />
+                <input
+                  class="form-section__card-month-year-input"
+                  id="mm-yy"
+                  type="text"
+                  placeholder="YY"
+                  maxlength="2"
+                />
+              </div>
+              <small class="form-section__details-error">Can't be blank</small>
+            </div>
+
+            <div class="form-section__card-cvc-container">
+              <label class="form-section__card-cvc-label" for="cvc">CVC</label>
+              <input
+                class="form-section__card-cvc-input"
+                id="cvc"
+                type="text"
+                placeholder="e.g. 123"
+                maxlength="3"
+              />
+              <small class="form-section__details-error">Can't be blank</small>
+            </div>
+          </div>
+
+          <input
+            class="form-section__submit-btn"
+            type="submit"
+            value="Confirm"
+          />
+        </form>
+
+        <div class="form-section__completed-container">
+          <img
+            class="form-section__completed-icon"
+            src="./assets/images/icon-complete.svg"
+            alt=""
+          />
+          <h1 class="form-section__completed-title">Thank you!</h1>
+          <p class="form-section__completed-text">
+            We've added your card details
+          </p>
+          <a class="form-section__completed-btn" href="#">Continue</a>
+        </div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ivan</a>.
+      </div>
+
+    <!-- Completed state start -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

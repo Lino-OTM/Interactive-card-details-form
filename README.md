@@ -10,7 +10,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ![](/design/desktop-preview.jpg)
 
-Link:
+Link: https://heartfelt-bunny-56504f.netlify.app
 
 ### Built with:
 
